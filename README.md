@@ -18,3 +18,10 @@
 
 ---
 ## Performance
+1. The time complexity is O(n). n is the number of flow numbers. The space complexity is O(n). The program needs space to store nat entries and flow entries.
+- I use a map to store nat transformation rules.
+2. Optimization
+- The first thing is to use object-oriented principles to encapsulate program methods.
+- Add methods to judge whether input flows are valid ip and port format.
+- When datasets become large, we could gather those have same ip and same port in flow files. And then we could handle those data together.
+- Call those have "\*" either in ip or in port in nat rules. Match these data first, the program can be faster.
