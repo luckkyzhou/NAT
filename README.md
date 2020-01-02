@@ -1,4 +1,20 @@
 # NAT
+## Program
+1. Test my solution
+- Predefine a NAT.txt and FLOW.txt.
+- Call the main method.
+- Show output on windows console.
+2. Interesting design
+- Use a map to store nat rules.
+- During match flow with nat rules, I complete that with three steps. First, match those are absolutely equaled. Second, use "\*" to replace ip in flow and match again. Thirdly, use "\*" to replace port in flow and match. Finally, if we can't match anything, print "No nat match for ip:port".
+3. Optimization
+- The first thing is to use object-oriented principles to encapsulate program methods.
+- Add methods to judge whether input flows are valid ip and port format.
+- When datasets become large, we could gather those have same ip and same port in flow files. And then we could handle those data together.
+- Call those have "\*" either in ip or in port in nat rules. Match these data first, the program can be faster.
+4. More well define the challenge
+- Predefine a NAT.txt and FLOW.txt to store inputs.
+
 ## Functionality
 1. Yes, the code work correctly
 - The INPUT is NAT.txt and FLOW.txt.
