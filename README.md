@@ -14,6 +14,8 @@
 - Call those have "\*" either in ip or in port in nat rules. Match these data first, the program can be faster.
 4. More well define the challenge
 - Predefine a NAT.txt and FLOW.txt to store inputs.
+5. Something else to highlight
+- This project is based on c++. Use NAT.cpp to run this program.
 
 ## Functionality
 1. Yes, the code work correctly
